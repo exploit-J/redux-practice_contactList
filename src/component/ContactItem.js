@@ -5,13 +5,10 @@ const ContactItem = ({ item }) => {
   return (
     <div>
       <Row>
-        <Col className="contact-img" lg={2} md={2}>
-          <img
-            width={50}
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
-          />
+        <Col className="contact-img" lg={2} md={2} sm={2}>
+          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" />
         </Col>
-        <Col className="contact-info" lg={10} md={10}>
+        <Col className="contact-info" lg={10} md={10} sm={10}>
           <div>{item.name}</div>
           <div>
             {item.phoneNum.replace(

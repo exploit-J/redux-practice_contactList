@@ -8,12 +8,12 @@ const SearchBox = () => {
         <Col lg={9} md={9}>
           <Form>
             <Form.Group className="mb-3" controlId="formName">
-              <Form.Control type="text" placeholder="이름" />
+              <Form.Control type="text" placeholder="이름으로 검색" />
             </Form.Group>
           </Form>
         </Col>
         <Col lg={3} md={3}>
-          <Button variant="primary" type="submit">
+          <Button className="search-button" variant="primary" type="submit">
             검색
           </Button>
         </Col>

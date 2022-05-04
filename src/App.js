@@ -12,10 +12,10 @@ function App() {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col md={6}>
           <ContactForm />
         </Col>
-        <Col>
+        <Col md={6}>
           <ContactList />
         </Col>
       </Row>

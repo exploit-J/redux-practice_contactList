@@ -3,10 +3,19 @@
   margin-bottom: 30px;
   text-align: center; }
 
-.put-button {
+button {
   width: 100%; }
 
 .contact-info {
   margin-bottom: 8px; }
+
+img {
+  width: 50px; }
+
+@media screen and (max-width: 767px) {
+  .input-form {
+    margin-bottom: 30px; }
+  .search-button {
+    margin-bottom: 15px; } }
 
 /*# sourceMappingURL=App.css.map */

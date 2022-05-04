@@ -15,7 +15,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Form onSubmit={addContact}>
+    <Form className="input-form" onSubmit={addContact}>
       <Form.Group className="mb-3" controlId="formName">
         <Form.Control
           type="text"
