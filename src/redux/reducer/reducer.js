@@ -1,5 +1,6 @@
 let initState = {
   contactList: [],
+  keyword: "",
 };
 
 function reducer(state = initState, action) {
@@ -13,11 +14,14 @@ function reducer(state = initState, action) {
           { name: payload.name, phoneNum: payload.phoneNum },
         ],
       };
+
+    case "SEARCH":
+      return { ...state, keyword: payload.keyword };
     default:
       return { ...state };
   }
 
-  //  action이 반복되어 코드리팩토링
+  //  action이 반복되어 코드리팩토링 ↑
 
   //   switch (action.type) {
   //     case "ADD_CONTACT":

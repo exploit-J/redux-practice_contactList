@@ -8,10 +8,7 @@ const ContactForm = () => {
   const dispatch = useDispatch();
   const addContact = (e) => {
     e.preventDefault();
-    dispatch({
-      type: "ADD_CONTACT",
-      payload: { name, phoneNum },
-    });
+    dispatch({ type: "ADD_CONTACT", payload: { name, phoneNum } });
   };
 
   return (
@@ -20,7 +17,9 @@ const ContactForm = () => {
         <Form.Control
           type="text"
           placeholder="이름"
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
           required
         />
       </Form.Group>
